@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<title>模态框插件</title>
+	</head>
+	<body style="margin: 50px;">
+		<!--模态框的申明-->
+		<div class="modal" id="myModal">
+			<!--窗口申明-->
+			<div class="modal-dialog">
+				<!--内容申明-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">
+							<button class="close" data-dismiss="modal"><span>&times;</span></button>
+							数据添加
+						</h4>
+					</div>
+					<div class="modal-body">
+						    <form role='form'>
+						    	<div class="form-group">
+						    		<label for="id">ID</label>
+						    		<input type="text" name="id" class="form-control" placeholder="ID" value="">
+						    		<label for="teacher">辅导员</label>
+						    		<input type="text" name="teacher" class="form-control" placeholder="辅导员">
+						    	</div>
+						    </form>
+					</div>
+					<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss='modal' >取消</button>
+							<button class="btn btn-primary">确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">添加</button>
+		
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
